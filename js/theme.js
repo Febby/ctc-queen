@@ -21,13 +21,13 @@
 				this.events.dropdownsOnTouch();
 				this.sliders();
 				this.plugins();
-				// this.events.newsLetter();
-				// this.events.contactForm();
-				// this.events.shoppingCart();
-				// this.events.selectButtons();
-				// this.events.ratingList();
-				// this.events.alertBoxes();
-				// this.events.categories();
+				this.events.newsLetter();
+				this.events.contactForm();
+				this.events.shoppingCart();
+				this.events.selectButtons();
+				this.events.ratingList();
+				this.events.alertBoxes();
+				this.events.categories();
 				this.events.layoutChangeIsotope();
 				this.events.quantity();
 				this.events.firstLetter();
@@ -1185,49 +1185,20 @@
 
 		$(window).load(function(){
 
-			// $.stickyMenu();
-			 $(function() {
-                $("ul#rp_playlist").responsiveplaylist({
-                    autoPlay: false,
-                    autoPlayOnLoad: false,
-                    allowFullScreen: true,
-                    deepLinks: true,
-                    onChange: function(){},
-                    start: 1,
-                    youtube: {
-                        autohide: '2',
-                        rel: '1',
-                        theme: 'dark',
-                        color: 'white',
-                        showinfo: '1',
-                        vq: 'medium'
-                    },
-                    vimeo: {
-                        title: '1',
-                        byline: '1',
-                        portrait: '1',
-                        color: '00adef'
-                    },
-                    // youtubeUsername: 'username',
-                    // vimeoUsername: 'username',
-                    // youtubePlaylist: 'XXXXXXXXXXXXXXXXXX',
-                    // vimeoAlbum: 'XXXXXXX',
-                    holderId: 'rp_video',
-                    secure: 'auto'
-                });
-            });
-			// $.sideMenu();
+			$.stickyMenu();
+			$.sideMenu();
 			$.responsiveMenu();
 			$.backToTop(1000);
 			$.correctImagesPosition();
 			$.swapContainers();
 			$.showSearchForm();
+           
 
 			if($(window).width() > 767){
 				$.megaMenu();
 			}
 			if($('[class*="isotope_container"]').length) $('[class*="isotope_container"]').isotope('layout');
-
+           
 			// window resize event
 			$(window).on('resize',function() {
 				if($(window).width() > 767){
