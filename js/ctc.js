@@ -2,12 +2,12 @@
             $(document).ready(function() {
             $('html').show();
             $("body").queryLoader2({
-            backgroundColor: '#fff',
-            barColor: '#056972',
-            barHeight: 4,
+            backgroundColor: '#7f0202',
+            barColor: '#fff',
+            barHeight: 6,
             percentage: true,
             deepSearch: true,
-            minimumTime: 1000
+            minimumTime: 2000
             });
             });
 
